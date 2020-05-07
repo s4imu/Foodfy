@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+
+            <main class="cartoes">
+               {% for recipe in recipes %}
+                <div class="cartao recipe" id="burger">
+                    <img src="{{recipe.image}}" alt="Burguer">
+                    <p id="nome">{{recipe.title}}</p>
+                    <p id="autor">{{recipe.author}}</p>
+                </div>
+                {%endfor%}
+            </main>
+
+    <div class="modalOverlay">
+        <div id="modal">
+            <div class="modalContent">
+                <img src="" alt="comida">
+                <div id="infosContent">
+                    <h1 class="nomeModal"></h1>
+                    <h2 class="autorModal"></h2>
+                </div>
+            </div>
+            <a id="closeModal">
+                <p>Fechar modal</p>
+            </a>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+    
+{% endblock content %}

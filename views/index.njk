@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+            <div id="cabecalho">
+                <div id="box">
+                    <div id="textContent">
+                        <h1>As melhores receitas</h1>
+                        <p>Aprenda a construir os melhores pratos
+                            com receitas criadas por profissionais
+                            do mundo inteiro.</p>
+                        </div>
+                    <div id="imageContent">
+                        <img src="/img/chef.png" alt="Chef">
+                    </div>
+                </div>
+            </div>
+
+            <div id="receitas">
+                <div id="mostViewed">
+                    <h2>Mais acessadas</h2>
+                </div>
+                <div class="cartoes">
+                    {%for recipe in recipes %}
+                    {% if recipe.mostViewed %}
+                    <div class="cartao" id="burger">
+                    <img src="{{recipe.image}}" alt="Burguer">
+                    <p id="nome">{{recipe.title}}</p>
+                    <p id="autor">{{recipe.author}}</p>
+                    </div>
+                    {%endif%}
+                    {%endfor%}
+                </div>
+            </div>
+
+{%endblock content%}

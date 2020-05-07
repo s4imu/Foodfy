@@ -7,7 +7,7 @@ for (let cartao of cartoes) {
         const nome = cartao.querySelector("#nome").textContent
         const autor = cartao.querySelector("#autor").textContent
         modalOverlay.classList.add('active')
-        modalOverlay.querySelector('img').src = `public/img/${receitaId}.png`
+        modalOverlay.querySelector('img').src = `/img/${receitaId}.png`
         modalOverlay.querySelector('.autorModal').innerHTML = `${autor}`
         modalOverlay.querySelector('.nomeModal').innerHTML = `${nome}`
 
