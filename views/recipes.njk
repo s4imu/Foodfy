@@ -4,7 +4,7 @@
 
             <main class="cartoes">
                {% for recipe in recipes %}
-                <div class="cartao recipe" id="burger">
+                <div class="cartao recipe" id="{{recipe.id}}">
                     <img src="{{recipe.image}}" alt="Burguer">
                     <p id="nome">{{recipe.title}}</p>
                     <p id="autor">{{recipe.author}}</p>

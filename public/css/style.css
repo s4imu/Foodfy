@@ -229,5 +229,10 @@ footer #rodape p{
     font-size: 18px;
     color: #444444;
     line-height: 28px;
+}
+
+.recipeIngredients,
+.recipePreparation,
+.additionalInfos {
     margin-bottom: 39px;
 }

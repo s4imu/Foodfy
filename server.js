@@ -25,15 +25,15 @@ server.get("/recipes", function(req,res) {
     return res.render('recipes', { recipes })
 })
 
-server.get("/recipe", function(req,res) {
-    return res.render('recipe', { recipes })
-})
 
 server.get("/recipe/:index", function (req, res) {
-    const recipes = recipes
-    const recipeIndex = req.params.index;
-  
-    console.log(recipes[recipeIndex]);
+    const recipeIndex = req.params.index
+
+    const recipe = recipes.find(function(recipe) {
+        return recipeIndex == recipe.id
+    })
+
+    return res.render('recipe', {recipe})
 
   })
 

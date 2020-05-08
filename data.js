@@ -4,6 +4,7 @@ module.exports = [
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png',
       title: 'Triplo bacon burger',
       author: 'Jorge Relato',
+      id: 'burger',
       mostViewed: true,
       ingredients: [
         '3 kg de carne moída (escolha uma carne magra e macia)',
@@ -22,12 +23,13 @@ module.exports = [
         'Faça no máximo 4 camadas por forma e leve para congelar.',
         'Retire do congelador, frite ou asse e está pronto.'
       ],
-      information: "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \n\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
+      information: "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! <br /><br /> Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
     },
     {
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png',
       title: 'Pizza 4 estações',
       author: 'Fabiana Melo',
+      id: 'pizza',
       mostViewed: true,
       ingredients: [
         '1 xícara (chá) de leite',
@@ -56,6 +58,7 @@ module.exports = [
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png',
       title: 'Asinhas de frango ao barbecue',
       author: 'Vania Steroski',
+      id: 'assinha',
       mostViewed: true,
       ingredients: [
         '12 encontros de asinha de galinha, temperados a gosto',
@@ -74,6 +77,7 @@ module.exports = [
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
       title: "Lasanha mac n' cheese",
       author: 'Juliano Vieira',
+      id: 'lasanha',
       mostViewed: true,
       ingredients: [
         'massa pronta de lasanha',
@@ -95,6 +99,7 @@ module.exports = [
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png',
       title: 'Espaguete ao alho',
       author: 'Júlia Kinoto',
+      id: 'espaguete',
       mostViewed: true,
       ingredients: [
         '1 pacote de macarrão 500 g (tipo do macarrão a gosto)',
@@ -120,6 +125,7 @@ module.exports = [
       image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
       title: 'Docinhos pão-do-céu',
       author: 'Ricardo Golvea',
+      id: 'doce',
       mostViewed: true,
       ingredients: [
         '1 kg de batata - doce',
@@ -143,6 +149,7 @@ module.exports = [
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png',
     title: 'Triplo bacon burger',
     author: 'Jorge Relato',
+    id: 'burger',
     ingredients: [
       '3 kg de carne moída (escolha uma carne magra e macia)',
       '300 g de bacon moído',
@@ -160,12 +167,13 @@ module.exports = [
       'Faça no máximo 4 camadas por forma e leve para congelar.',
       'Retire do congelador, frite ou asse e está pronto.'
     ],
-    information: "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \n\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
+    information: "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! <br /><br /> Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
   },
   {
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png',
     title: 'Pizza 4 estações',
     author: 'Fabiana Melo',
+    id: 'pizza',
     ingredients: [
       '1 xícara (chá) de leite',
       '1 ovo',
@@ -193,6 +201,7 @@ module.exports = [
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png',
     title: 'Asinhas de frango ao barbecue',
     author: 'Vania Steroski',
+    id: 'assinha',
     ingredients: [
       '12 encontros de asinha de galinha, temperados a gosto',
       '2 colheres de sopa de farinha de trigo',
@@ -210,6 +219,7 @@ module.exports = [
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
     title: "Lasanha mac n' cheese",
     author: 'Juliano Vieira',
+    id: 'lasanha',
     ingredients: [
       'massa pronta de lasanha',
       '400 g de presunto',
@@ -230,6 +240,7 @@ module.exports = [
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png',
     title: 'Espaguete ao alho',
     author: 'Júlia Kinoto',
+    id: 'espaguete',
     ingredients: [
       '1 pacote de macarrão 500 g (tipo do macarrão a gosto)',
       '1 saquinho de alho granulado',
@@ -254,6 +265,7 @@ module.exports = [
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
     title: 'Docinhos pão-do-céu',
     author: 'Ricardo Golvea',
+    id: 'doce',
     ingredients: [
       '1 kg de batata - doce',
       '100 g de manteiga',
