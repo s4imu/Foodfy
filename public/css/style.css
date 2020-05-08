@@ -22,9 +22,6 @@ body {
     margin: 0 auto;
 }
 
-ul {
-    padding: 0px!important;
-}
 
 .content {
     margin: 0 auto;
@@ -194,60 +191,8 @@ footer #rodape p{
 }
 
 
-/*================Receitas Modal==================*/
+/*================Receitas Info==================*/
 
-.modalOverlay {
-    background-color: rgba(0,0,0,.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#modal {
-    background-color: white;
-    width: 660px;
-    height: 420px;
-    margin: 5vh auto;
-    margin-top: 12%;
-    border-radius: 16px;
-}
-
-#closeModal {
-    float: left;
-    margin-left: 43%;
-    padding-top: 30px;
-
-}
-
-#closeModal p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-    color: #999999;
-    cursor: pointer;
-    
-}
-
-.modalOverlay.active  {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modalContent {
-    padding: 30px;
-}
-
-.modalContent img{
-    width: 600px;
-    height: 200px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.nomeModal,
 .nameRecipe {
     font-size: 36px; 
     font-weight: bold;
@@ -255,7 +200,6 @@ footer #rodape p{
     margin-bottom: 5px; 
     text-align: center;
 }
-.autorModal,
 .authorRecipe {
     font-size: 20px;
     color: #777777;
@@ -265,4 +209,25 @@ footer #rodape p{
 .imgRecipe {
     border-radius: 15px;
     margin-bottom: 50px;
+}
+
+.recipeHeader {
+    margin-bottom: 50px;
+}
+
+.recipeInfos ul {
+    padding-left: 16px;
+}   
+.recipeInfos h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
+.recipeInfos p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-bottom: 39px;
 }
