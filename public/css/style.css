@@ -53,6 +53,10 @@ body {
     padding: 15px;         
     text-decoration: none;
 }
+
+.active {
+    font-weight: bold!important;
+}
 /*================Cabeçalho==================*/
 
 #cabecalho{
@@ -192,7 +196,6 @@ footer #rodape p{
 
 
 /*================Receitas Info==================*/
-
 .nameRecipe {
     font-size: 36px; 
     font-weight: bold;
@@ -225,6 +228,11 @@ footer #rodape p{
     margin-bottom: 20px;
 }
 
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
 .recipeInfos p {
     font-size: 18px;
     color: #444444;
@@ -235,4 +243,12 @@ footer #rodape p{
 .recipePreparation,
 .additionalInfos {
     margin-bottom: 39px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+    margin-left: 8px;
 }
