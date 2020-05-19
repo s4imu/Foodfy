@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{%block head%}{%endblock head%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="https://bit.ly/2zTleuY" type="image/x-icon" />
+    <title>Foodfy</title>
+</head>
+<body>
+    <header>
+        <nav class="admMenu">
+            <div id="admLogo">
+                <a href="/"><img src="/img/admLogo.png" alt="Logo"></a>
+            </div>
+        </nav>
+    </header>
+     <div class="content">
+
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>

@@ -17,8 +17,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; 
     width: 100%;
-    height: 100%;
+    min-height: 100vh; 
     margin: 0 auto;
 }
 
@@ -26,6 +28,7 @@ body {
 .content {
     margin: 0 auto;
     width: 940px;
+    min-height: 200px;
     position: relative;
 }
 /*================Menu Navegação==================*/
@@ -40,6 +43,8 @@ body {
     width: 20%;
     float: left;
 }
+
+
 
 
 .links{
@@ -147,7 +152,11 @@ body {
 }
 /*================Rodape==================*/
 
-footer #rodape {
+footer {
+    margin-top: auto;
+}
+
+#rodape {
     background-color: #EEEEEE; 
     width: 100%;
     height: 60px;
@@ -251,4 +260,68 @@ button {
     font-size: 12px;
     color: #999999;
     margin-left: 8px;
+    outline: none;
+    cursor: pointer;
 }
+
+/*================Administration==================*/
+
+#admLogo {  
+    width: 20%;
+    float: left;
+    padding-left: 16%;
+}
+
+.admMenu {  
+    width: 100%;
+    height: 60px;
+    padding-top: 24px;
+    background-color: var(--color-black);
+}
+
+/*================Index==================*/
+
+.admCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.admPainel h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--color-black);
+    margin: 30px auto;
+}
+
+.admCard img {
+    width: 172px;
+    height: 80px;
+    border-radius: 9px;
+}
+
+.admCard {
+    display: grid;
+    grid-template-columns: 0fr  1fr;
+    gap: 20px;
+}
+
+.admPainel h3 {
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--color-black);
+    margin-bottom: 5px;
+}
+
+.admPainel p {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 5px;
+}
+
+.admPainel a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6558C3;
+    text-decoration: none;
+} 

@@ -1,0 +1,21 @@
+{% extends 'admLayout.njk' %}
+
+{% block content %}
+
+    <div class="admPainel">
+        <h2>Gerenciar Receitas</h2>
+        <div class="admCards">
+            {% for recipe in recipes %}
+                <div class="admCard">
+                    <img src="{{recipe.image}}" alt="{{recipe.id}}">
+                    <div class="cardDescription" >
+                        <h3>{{recipe.title}}</h3>
+                        <p>{{recipe.author}}</p>
+                        <a href="#">Visualizar</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}
