@@ -1,0 +1,72 @@
+ <button type="submit" class="save">Salvar receita</button>
+<div class="item">
+    <div>Imagem da Receita</div>
+    <div>
+        <input type="url" 
+        name="image" 
+        value="{{recipe.image}}">
+    </div>
+</div>
+<div class="item">
+    <div>Título da Receita</div>
+    <div>
+        <input type="text" name=title value="{{recipe.title}}">
+    </div>
+</div>
+<div class="item">
+    <div>Autor da Receita</div>
+    <div>
+        <input type="text" name=author value="{{recipe.author}}">
+    </div>
+</div>
+<div class="item">
+    <div>Destaque</div>
+    <div class>
+            <input type="radio" name="mostViewed" value="S" {% if recipe.mostViewed == 'S' %}
+                checked
+            {% endif %}>Sim
+            <input type="radio" name="mostViewed" value="N" {% if recipe.mostViewed == 'N' %}
+                checked
+            {% endif %}>Não
+    </div>
+</div>
+<div class="item">
+    <div id="ingredients">
+        <div>Ingredientes</div>
+        {%if recipe %}
+            {% for ingredient in recipe.ingredients %}
+            <div class="ingredient">
+                <input type="text" name="ingredients[]" value="{{ingredient}}"/>
+            </div>
+            {% endfor %}
+            {%else%}
+        <div class="ingredient">
+            <input type="text" name="ingredients[]"/>
+        </div>
+        {% endif %}
+    </div>
+    <button type="button" class="add-ingredient">Adicionar ingrediente</button>
+</div>
+<div class="item">
+    <div id="preparation">
+        <div>Modo de Preparo</div>
+        {% if recipe %}
+            {% for preparation in recipe.preparation %}
+            <div class="preparation">
+                <input type="text" name="preparation[]" value="{{preparation}}"/>
+            </div>
+            {% endfor %}
+        {% else %}
+        <div class="preparation">
+            <input type="text" name="preparation[]"/>
+        </div>
+        {% endif %}
+    </div>
+    <button type="button" class="add-preparation">Adicionar novo passo</button>
+</div>
+<div class="item">
+    <div>Informações Adicionais</div>
+    <div>
+        <input class="boxInformation" type="text" name="information" value="{{recipe.information}}">
+    </div>
+</div>

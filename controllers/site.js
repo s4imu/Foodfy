@@ -14,7 +14,7 @@ exports.recipes = function(req,res) {
 
 exports.recipe =  function (req, res) {
     const recipeIndex = req.params.index
-
+    
     const recipe = data.recipes.find(function(recipe) {
         return recipeIndex == recipe.id
     })

@@ -22,7 +22,7 @@
                 </div>
                 <div class="cartoes">
                     {%for recipe in recipes %}
-                    {% if recipe.mostViewed %}
+                    {% if recipe.mostViewed == 'S' %}
                     <div class="cartao" id="burger">
                     <img src="{{recipe.image}}" alt="Burguer">
                     <p id="nome">{{recipe.title}}</p>

@@ -1,0 +1,25 @@
+{% extends 'admLayout.njk' %}
+
+{% block content %}
+
+<div class="createRecipe">
+
+    <h2>Editar Receita</h2>
+
+    <form method="POST" action="/admin/recipes?_method=PUT">
+
+        {% include 'admin/fields.njk' %}
+
+        <input type="hidden" name="id" value={{recipe.id}}>
+    </form>
+
+    <form id="delete" action="/admin/recipes?_method=DELETE" method="POST">
+        <input type="hidden" name="id" value={{recipe.id}} >
+        <button id="recipeDelete" type="submit" >Apagar receita</button>
+    </form>
+
+    {% include 'delete.njk' %}
+
+</div>
+
+{% endblock content %}
