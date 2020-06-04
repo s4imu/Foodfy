@@ -1,4 +1,4 @@
- <button type="submit" class="save">Salvar receita</button>
+<button type="submit" class="save">Salvar receita</button>
 <div class="item">
     <div>Imagem da Receita</div>
     <div>
@@ -11,23 +11,6 @@
     <div>Título da Receita</div>
     <div>
         <input type="text" name=title value="{{recipe.title}}">
-    </div>
-</div>
-<div class="item">
-    <div>Autor da Receita</div>
-    <div>
-        <input type="text" name=author value="{{recipe.author}}">
-    </div>
-</div>
-<div class="item">
-    <div>Destaque</div>
-    <div class>
-            <input type="radio" name="mostViewed" value="S" {% if recipe.mostViewed == 'S' %}
-                checked
-            {% endif %}>Sim
-            <input type="radio" name="mostViewed" value="N" {% if recipe.mostViewed == 'N' %}
-                checked
-            {% endif %}>Não
     </div>
 </div>
 <div class="item">

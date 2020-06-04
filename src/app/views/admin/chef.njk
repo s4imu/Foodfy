@@ -1,0 +1,53 @@
+{% extends "admLayout.njk" %}
+
+{% block content %}
+
+<div class="admEdit">
+        <h2>Chef: {{chef.name}}</h2>
+        <a href="/admin/chef/{{chef.id}}/edit">Editar Chef</a>
+        <div class="chefProfile" >
+            <span style="background: url('{{chef.avatar_url}}') no-repeat center center / cover;"></span>
+                <p class="chefName">{{chef.name}}</p>
+                <p class="chefNumberRecipes ">4 receitas</p>
+        </div>
+        <div class="chefRecipes">
+            <h2>Receitas</h2>
+            <div class="chefRecipesCards">
+                <div class="recipeCard">
+                    <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png" alt="">
+                    <div class="cardDescription" >
+                        <h3>Pizza 4 estações</h3>
+                        <p>Jorge Rabelo</p>
+                        <a href="/admin/recipe/{{recipe.id}}" id="showRecipe">Visualizar</a>
+                    </div>
+                </div>
+                <div class="recipeCard">
+                    <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png" alt="">
+                    <div class="cardDescription" >
+                        <h3>Pizza 4 estações</h3>
+                        <p>Jorge Rabelo</p>
+                        <a href="/admin/recipe/{{recipe.id}}" id="showRecipe">Visualizar</a>
+                    </div>
+                </div>
+                <div class="recipeCard">
+                    <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png" alt="">
+                    <div class="cardDescription" >
+                        <h3>Pizza 4 estações</h3>
+                        <p>Jorge Rabelo</p>
+                        <a href="/admin/recipe/{{recipe.id}}" id="showRecipe">Visualizar</a>
+                    </div>
+                </div>
+                <div class="recipeCard">
+                    <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png" alt="">
+                    <div class="cardDescription" >
+                        <h3>Pizza 4 estações</h3>
+                        <p>Jorge Rabelo</p>
+                        <a href="/admin/recipe/{{recipe.id}}" id="showRecipe">Visualizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+{% endblock content %}
