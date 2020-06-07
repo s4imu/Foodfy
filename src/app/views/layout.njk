@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-{%block head%}{%endblock head%}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="https://bit.ly/2zTleuY" type="image/x-icon" />
-    <title>Foodfy</title>
-</head>
-<body>
- <div class="content">
+    <head>
+        {%block head%}{%endblock head%}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="https://bit.ly/2zTleuY" type="image/x-icon"/>
+        <title>Foodfy</title>
+    </head>
+    <body>
+        <div class="content">
             <header>
                 <nav class="menu">
                     <div id="logo">
@@ -18,22 +18,24 @@
                     <div class="links">
                         <a href="/about">Sobre</a>
                         <a href="/recipes">Receitas</a>
+                        <a href="/chefs">Chefs</a>
                         <div>
-                </nav>
-            </header>
+                        {% block nav %}
+                        {% endblock nav %}
+                        </nav>
+                    </header>
 
-        {% block content %}
-        {% endblock content %}
+                    {% block content %}{% endblock content %}
 
-        <script src="/js/script.js"></script>
-        
-    </div>
-    <footer>
-        <div id="rodape">
-            <div id="copyright">
-                <p>Todos direitos reservados, receitas Foodfy.</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+                    <script src="/js/script.js"></script>
+
+                </div>
+                <footer>
+                    <div id="rodape">
+                        <div id="copyright">
+                            <p>Todos direitos reservados, receitas Foodfy.</p>
+                        </div>
+                    </div>
+                </footer>
+            </body>
+        </html>

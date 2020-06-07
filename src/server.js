@@ -21,6 +21,4 @@ nunjucks.configure("src/app/views", {
 })
 
 
-server.listen(5000, function() {
-
-})
+server.listen(5000)

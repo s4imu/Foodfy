@@ -1,16 +1,16 @@
-{% extends 'admLayout.njk' %}
+{% extends 'layout.njk' %}
 
 {% block content %}
 
-    <div class="admPainel">
-        <h2>Gerenciar Chefs</h2>
+    <div class="sitePainel">
         <div class="chefsCards">
             {% for chef in chefs %}
                 <div class="chefCard">
                     <span style="background-image: url({{chef.avatar_url}})"></span>
                     <div class="chefLegend">
                         <h3>{{chef.name}}</h3>
-                        <a href="/admin/chef/{{chef.id}}">Visualizar</a>
+                        <p>{{chef.total_recipes}}
+                            receitas</p>
                     </div>
                 </div>
             {% endfor %}

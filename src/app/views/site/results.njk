@@ -1,7 +1,14 @@
 {% extends "layout.njk" %}
 
-{% block content %}
+{% block nav %}
+    <form action="/index" method="GET" class="search">
+        <input type="text" name="filter" placeholder="Buscar uma receita" value={{filter} }="}">
+        <button type="submit">Buscar</button>
+    </form>
+{% endblock nav %}
 
+{% block content %}
+    <h2>Buscando por "{{filter}}"</h2>
     <div class="cartoes">
         {% for recipe in recipes %}
             <div class="cartao recipe" id="{{recipe.id}}">

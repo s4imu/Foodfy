@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-{%block head%}{%endblock head%}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="https://bit.ly/2zTleuY" type="image/x-icon" />
-    <title>Foodfy</title>
-</head>
-<body>
+    <head>
+        {%block head%}{%endblock head%}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="https://bit.ly/2zTleuY" type="image/x-icon"/>
+        <title>Foodfy</title>
+    </head>
+    <body>
 
-    <header class="admMenu">
-        <img src="/img/admLogo.png" alt="Logomarca">     
-        <a href="/admin/recipes">Receitas</a>
-        <a href="/admin/chefs">Chefs</a>
-    </header>
+        <header class="admMenu">
+            <a href="/admin/recipes" id="admLogo"><img src="/img/admLogo.png" alt="Logomarca">
+            </a>
+            <a href="/admin/recipes">Receitas</a>
+            <a href="/admin/chefs">Chefs</a>
+        </header>
 
-     <div class="content">
+        <div class="content">
 
-        {% block content %}
-        {% endblock content %}
-    </div>
+            {% block content %}{% endblock content %}
+        </div>
 
-    <script src="/js/script.js"></script>
-</body>
+        <script src="/js/script.js"></script>
+    </body>
 </html>

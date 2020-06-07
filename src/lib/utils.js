@@ -1,12 +1,12 @@
 module.exports = {
-    
+
     index: function (string) {
-    
-    const strArray = string.split(" ")
 
-    const id = strArray[0].toLowerCase()
+        const strArray = string.split(" ")
 
-    return id
+        const id = strArray[0].toLowerCase()
+
+        return id
 
     },
     date(timestamp) {
@@ -23,7 +23,7 @@ module.exports = {
             iso: `${year}-${month}-${day}`,
             birthDay: `${day}/${month}`,
             format: `${day}/${month}/${year}`
-        } 
+        }
     },
 
 }

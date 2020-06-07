@@ -2,24 +2,24 @@
 
 {% block content %}
 
-<div class="createRecipe">
+    <div class="createRecipe">
 
-    <h2>Editar Receita</h2>
+        <h2>Editar Receita</h2>
 
-    <form method="POST" action="/admin/recipes?_method=PUT">
+        <form method="POST" action="/admin/recipes?_method=PUT">
 
-        {% include 'admin/fields.njk' %}
+            {% include 'admin/fields.njk' %}
 
-        <input type="hidden" name="id" value={{recipe.id}}>
-    </form>
+            <input type="hidden" name="id" value={{recipe.id}}>
+        </form>
 
-    <form id="delete" action="/admin/recipes?_method=DELETE" method="POST">
-        <input type="hidden" name="id" value={{recipe.id}} >
-        <button id="recipeDelete" type="submit" >Apagar receita</button>
-    </form>
+        <form id="delete" action="/admin/recipes?_method=DELETE" method="POST">
+            <input type="hidden" name="id" value={{recipe.id}}>
+            <button id="recipeDelete" type="submit">Apagar receita</button>
+        </form>
 
-    {% include 'delete.njk' %}
+        {% include 'delete.njk' %}
 
-</div>
+    </div>
 
 {% endblock content %}
