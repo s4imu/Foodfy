@@ -2,7 +2,7 @@
 
 {% block nav %}
     <form action="/index" method="GET" class="search">
-        <input type="text" name="filter" placeholder="Buscar uma receita" value={{filter} }="}">
+        <input type="text" name="filter" placeholder="Buscar uma receita" value="{{filter}}">
         <button type="submit">Buscar</button>
     </form>
 {% endblock nav %}
@@ -11,7 +11,7 @@
     <h2>Buscando por "{{filter}}"</h2>
     <div class="cartoes">
         {% for recipe in recipes %}
-            <div class="cartao recipe" id="{{recipe.id}}">
+            <div class="cartao recipe" id="{{recipe.title}}">
                 <img src="{{recipe.image}}" alt="{{recipe.id}}">
                 <p id="nome">{{recipe.title}}</p>
                 <p id="autor">{{recipe.author}}</p>

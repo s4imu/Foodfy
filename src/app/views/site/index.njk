@@ -27,8 +27,8 @@
         </div>
         <div class="cartoes">
             {%for recipe in recipes %}
-                <div class="cartao" id="burger">
-                    <img src="{{recipe.image}}" alt="Burguer">
+                <div class="cartao" id="{{recipe.id}}">
+                    <img src="/img/{{recipe.title}}.png" alt="{{recipe.title}}">
                     <p id="nome">{{recipe.title}}</p>
                     <p id="autor">{{recipe.author}}</p>
                 </div>
