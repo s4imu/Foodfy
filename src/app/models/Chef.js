@@ -27,14 +27,6 @@ module.exports = {
 
         return db.query(query, values)
     },
-    find(id) {
-        return db.query(`
-        SELECT chefs.*, count(recipes) AS total_recipes
-        FROM chefs
-        LEFT JOIN recipes ON (chefs.id = recipes.chef_id)
-        WHERE chefs.id = $1
-        GROUP BY chefs.id`, [id])
-    },
     update(data) {
         const query = `
         UPDATE chefs SET
@@ -49,6 +41,12 @@ module.exports = {
         ]
 
         return db.query(query, values)
+    },
+    find(id) {
+        return db.query(`
+        SELECT *
+        FROM chefs
+        WHERE chefs.id = $1`, [id])
     },
     delete(id) {
         return db.query(`DELETE from chefs WHERE id = $1`, [id])

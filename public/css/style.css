@@ -402,7 +402,6 @@ select {
     font-size: 16px;
     color: var(--color-black);
     margin-bottom: 10px;
-    padding: 5px
 }
 
 
@@ -562,3 +561,95 @@ select {
     width: 75%;
 }
 
+/*================Photos Upload Manager==================*/
+form .item .preview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px!important;
+    padding: 0px!important;
+}
+form .item #photos-upload{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 200px;
+}
+form .item #photos-upload span{
+    position: relative;
+    padding: 8px 16px;
+    border: 1px solid rgba(68, 68, 68, .2);
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -6px #333;
+    background-color: white;
+    display: block;
+    width: 112px;
+    height: 133px;
+}
+
+form .item #photos-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 100;
+}
+
+form .item #photos-upload span i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(68, 68, 68, .7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+    cursor: pointer;
+}
+
+form .item #photos-preview {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 4px;
+    grid-gap: 8px;
+    width: 100%;
+}
+
+form .item #photos-preview img {
+    width: 100%;
+    height: 152px;
+    border-radius: 4px;
+    object-fit: cover;
+    padding: 0px;
+}
+#photos-preview .photo {
+    position: relative;
+}
+
+#photos-preview .photo i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .8);
+    color: red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+    cursor: pointer;
+    transition: opacity 200ms;
+    opacity: 0;
+}
+
+#photos-preview .photo i:hover {
+    opacity: 1;
+}

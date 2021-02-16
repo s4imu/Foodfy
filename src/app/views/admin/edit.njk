@@ -6,7 +6,7 @@
 
         <h2>Editar Receita</h2>
 
-        <form method="POST" action="/admin/recipes?_method=PUT">
+        <form method="POST" action="/admin/recipes?_method=PUT" enctype="multipart/form-data">
 
             {% include 'admin/fields.njk' %}
 
