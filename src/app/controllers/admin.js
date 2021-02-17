@@ -30,7 +30,7 @@ module.exports = {
         let results = await Recipe.create(req.body)
         const recipeId = results.rows[0].id
 
-        const filesPromise = req.files.map(file => File.create({file}))
+        const filesPromise = req.files.map(file => File.create({...file}))
         const filesResults = await Promise.all(filesPromise)
 
         const recipeFilesPromises = filesResults.map(file => {
@@ -88,7 +88,7 @@ module.exports = {
 
         await Recipe.delete(req.body.id)
         
-        return res.redirect("admin/index")
+        return res.redirect("/admin/recipes")
         
     },
     async indexChef(req, res) {
